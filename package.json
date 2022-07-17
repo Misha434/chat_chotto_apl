@@ -25,7 +25,8 @@
     "fix": "npm run format && npm run lint:fix",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:css": "stylelint --ignore-path .gitignore '**/*.(css|tsx)'"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -51,8 +52,13 @@
     ]
   },
   "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.38.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "postcss-syntax": "^0.36.2",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0"
   }
 }
