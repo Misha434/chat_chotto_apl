@@ -30,7 +30,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run fix", "npm run lint:css"
+      "npm run fix"
     ]
   },
   "eslintConfig": {
