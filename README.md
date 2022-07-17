@@ -16,4 +16,4 @@ chat app with grpc-web
 
 ## ERD
 
-wip
+wip now
